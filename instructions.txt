@@ -1,0 +1,20 @@
++BRU0000003; Unconditional branch to instruction 3
++0000000001; Data: 1
++0000000002; Data: 2
++RWD0000100; Read a word from the device into memory location 100
++LDA0000001; Load the value at memory location 1 into the accumulator
++STO0000101; Store the accumulator value into memory location 101
++LDA0000002; Load the value at memory location 2 into the accumulator
++STO0000102; Store the accumulator value into memory location 102
++LDA0000100; Load the value at memory location 100 into the accumulator
++SUB0000102; Subtract the value at memory location 102 from the accumulator
++BRM0000018; Branch to instruction 18 if the accumulator is negative
++LDA0000101; Load the value at memory location 101 into the accumulator
++MPY0000102; Multiply the accumulator by the value at memory location 102
++STO0000101; Store the accumulator value into memory location 101
++LDA0000102; Load the value at memory location 102 into the accumulator
++ADD0000001; Add the value at memory location 1 to the accumulator
++STO0000102; Store the accumulator value into memory location 102
++BRU0000008; Unconditional branch to instruction 8
++WWD0000101; Write a word from memory location 101 to the device
++HLT0000000
